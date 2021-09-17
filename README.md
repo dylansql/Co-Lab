@@ -14,15 +14,22 @@ Other users will be able to write a review for the artist/musician that they wor
 
 ## Wireframes
 
-![wireframe](./Assets/wireframe.jpeg)
+https://whimsical.com/wireframe-KNSz9tzJ1j5N4TWnmS72CY
+
+### Hierarchy Component
+
+https://whimsical.com/component-hierarchy-UAgsQR7jxzi75mJuPG9ooA
 
 ### MVP/PostMVP
- 
+
+### API 
+
+The Api I will be using was created on airtable. I will be extracting data to filter the needs of the user. After the results have been extracted. I will create a profile page with additional information of the result. 
 
 #### MVP 
 
-- Find and use external api 
-- Allow user to enter input in working search
+- Use Api to render recommendations dependent on the parameters of the use
+- Have 6 components
 - Render data on page 
 - link footer to github and LinkedIn
 - transitional background
@@ -34,6 +41,7 @@ Other users will be able to write a review for the artist/musician that they wor
 - when selecting time line. The css will reflect a different time period area.
 - render additional results in a css animation
 - left click to add right click to remove
+
 
 ## Project Schedule
 
@@ -50,11 +58,6 @@ Other users will be able to write a review for the artist/musician that they wor
 ![prioritymatrix](./Assets/pm.png)
 
 ## Timeframes
-
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
 
 | Component | Priority | Estimated Time | Time Invested | ActualTime |
 | :---: | :---: | :---: | :---: | :---: |
