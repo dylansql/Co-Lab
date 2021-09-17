@@ -29,18 +29,19 @@ The Api I will be using was created on airtable. I will be extracting data to fi
 #### MVP 
 
 - Use Api to render recommendations dependent on the parameters of the use
-- Have 6 components
-- Render data on page 
-- link footer to github and LinkedIn
-- transitional background
+- Include 6 rendering components
+- Use only react to manipulate DOM
+- Use Axios to POST/create new data on the AirTable.
+- Develop Interactive React App
+- USe CSS to create a dynamic and responsice site
 
 #### PostMVP  
 
-- Add second API
-- Use local storage to save user favorites
-- when selecting time line. The css will reflect a different time period area.
-- render additional results in a css animation
-- left click to add right click to remove
+- Implement a css Library
+- Use authentification for users to create their own profile
+- Create an organized React file Structure
+- render Loading in a css animation
+- add remove buttons for additional reviews.
 
 
 ## Project Schedule
