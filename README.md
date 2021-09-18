@@ -41,18 +41,20 @@ The Api I will be using was created on airtable. I will be extracting data to fi
 - Use authentification for users to create their own profile
 - Create an organized React file Structure
 - render Loading in a css animation
-- add remove buttons for additional reviews.
+- add remove buttons for additional reviews
+- create a search bar so that first time users can find an artist by name 
+- Create a side bar that goes straight to reviews and other components
 
 
 ## Project Schedule
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|August 30| Prompt / Wireframes / Priority Matrix / Timeframes / Project approval | Complete
-|August 31| Core Application Structure (HTML, CSS, etc.)/ Pseudocode | Complete
-|September 1| Actual Code/Clickable Code| Complete
-|September 2| MVP | Complete
-|September 3| Presentations | Working
+|September 18| Access API and render results with various props | Incomplete
+|August 31| Core Application Structure (HTML, CSS, etc.)/ Pseudocode | Incomplete
+|September 1| Actual Code/Clickable Code| Incomplete
+|September 2| MVP | Incomplete
+|September 3| Presentations | Incomplete
 
 ## Priority Matrix
 
