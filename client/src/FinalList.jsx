@@ -6,11 +6,11 @@ export default function FinalList(props) {
     const [ finalFilter, setFinalFilter ] = useState([]);
     const { list } = props
     
-    
+    const experienceList = props.filteredList.filter(item => item.fields.experience === "size-low" || item.fields.experience === "size-low")
 
     return (
         <div>
-            
+            <h1>this is the final list component</h1>
         </div>
     )
 }

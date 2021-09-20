@@ -24,6 +24,7 @@ const config = {
 
 function App() {
   const [list, setList] = useState([]);
+  const [filteredList, setFilteredList] = useState([])
 
   useEffect(() =>  {
     const fetchData = async () => {
@@ -59,10 +60,10 @@ function App() {
                         <Venudio />
                       </Route>
                       <Route path="/category/:type">
-                        <ReviewList list={list} />
+                        <ReviewList list={list} setFilteredList={setFilteredList} />
                       </Route>
-                      <Route path="/category/:type/experience/:finalType">
-                        <FinalList newList={newlist} />
+                      <Route path="/category/:type/experience/:xpoType">
+                        <FinalList filteredList={filteredList} />
                       </Route>
                   </Switch>
               </div>
