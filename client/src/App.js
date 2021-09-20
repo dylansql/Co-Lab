@@ -10,6 +10,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import ReviewList from './ReviewList'
 import FinalList from './FinalList'
+import Experience from './Experience'
 
 const BASE = process.env.REACT_APP_AIRTABLE_BASE
 const KEY = process.env.REACT_APP_AIRTABLE_KEY
@@ -62,7 +63,10 @@ function App() {
                       <Route path="/category/:type">
                         <ReviewList list={list} setFilteredList={setFilteredList} />
                       </Route>
-                      <Route path="/category/:type/experience/:xpoType">
+                      {/* <Route path="/category/:type/xpo">
+                        <Experience />
+                      </Route> */}
+                      <Route path="/category/:type/xpo/:xpoType">
                         <FinalList filteredList={filteredList} />
                       </Route>
                   </Switch>
