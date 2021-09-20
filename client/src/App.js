@@ -6,8 +6,37 @@ import Home from './Home'
 import Navbar from './Navbar'
 import './App.css'
 
-function App() {
+import { useEffect, useState } from 'react'
+import axios from 'axios'
+import ReviewList from './ReviewList'
+import FinalList from './FinalList'
 
+const BASE = process.env.REACT_APP_AIRTABLE_BASE
+const KEY = process.env.REACT_APP_AIRTABLE_KEY
+
+const URL = `https://api.airtable.com/v0/${BASE}/Artist`
+
+const config = {
+  headers: {
+    Authorization: `Bearer ${KEY}`,
+  },
+};
+
+function App() {
+  const [list, setList] = useState([]);
+
+  useEffect(() =>  {
+    const fetchData = async () => {
+      try {
+        const res = await axios.get(URL, config)
+        setList(res.data.records)
+        console.log(res)
+      } catch(error) {
+        console.log(error)
+      }
+  }
+    fetchData()
+  }, []);
   
   return (
     <Router>
@@ -19,15 +48,21 @@ function App() {
                   <Switch>
                       <Route exact path="/">
                         <Home />
-                          </Route>
-                            <Route exact path="/Music">
-                              <Music />
-                                </Route>
-                                  <Route exact path="/PhoVideography">
-                                    <PhoVideography />
-                                  </Route>
-                              <Route exact path="/Venudio">
-                          <Venudio />
+                      </Route>
+                      <Route exact path="/Music">
+                        <Music />
+                      </Route>
+                      <Route exact path="/PhoVideography">
+                        <PhoVideography />
+                      </Route>
+                      <Route exact path="/Venudio">
+                        <Venudio />
+                      </Route>
+                      <Route path="/category/:type">
+                        <ReviewList list={list} />
+                      </Route>
+                      <Route path="/category/:type/experience/:finalType">
+                        <FinalList newList={newlist} />
                       </Route>
                   </Switch>
               </div>

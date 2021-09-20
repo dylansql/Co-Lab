@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const PhoVideography = () => {
 
 
@@ -7,12 +9,12 @@ const PhoVideography = () => {
         <h1> Photography / Videography </h1>
             <h3>What's your Missing Piece</h3>
                 <div className="Photographer">
-                        <button></button>
-                            <h5>I need a Photographer</h5>
+                <Link to={`/category/Photographer`}><button>I need a Photographer</button></Link>
+                            <h5>Logo should be above</h5>
                     </div>
                 <div className="Videographer">
-                        <button></button>
-                            <h5>I need a Videographer</h5>
+                <Link to={`/category/Videographer`}><button>I need a Videographer</button></Link>
+                            <h5>Logo Above</h5>
                     </div>
     </div>
     );
