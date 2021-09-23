@@ -12,6 +12,8 @@ import FinalList from './FinalList'
 import Experience from './Experience'
 import VenudioXP from './VenudioXP'
 import StudioFinalList from './StudioFinalList'
+import Create from './Create'
+import './index.css'
 
 const BASE = process.env.REACT_APP_AIRTABLE_BASE
 const KEY = process.env.REACT_APP_AIRTABLE_KEY
@@ -95,6 +97,9 @@ function App() {
                       </Route>
                       <Route exact path="/category/Venudio/:type/xpo/:xpoType/results">
                         <StudioFinalList filteredList={filteredList} />
+                      </Route>
+                      <Route exact path="/Create/Post">
+                        <Create list={list} />
                       </Route>
                   </Switch>
               </div>
