@@ -2,24 +2,23 @@ import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useEffect } from 'react';
 
-export default function FinalList(props) {
+export default function StudioFinalList(props) {
     const [ finalFilter, setFinalFilter ] = useState([]);
     const { xpoType } = useParams()
     const { filteredList } = props
-    
-
-    
 
     useEffect(()=> {
         // console.log("Xperience", item.fields.experience)
-        const experienceList = filteredList.filter(item => {
-        if(item.fields.experience === xpoType || item.fields.experience === `${xpoType}\n`) {
-            console.log(item.fields.experience === xpoType || item.fields.experience === xpoType)
+        console.log(xpoType)
+        const budgetList = filteredList.filter(item => {
+        if(item.fields.budget === xpoType || item.fields.budget === `${xpoType}\n`) {
+            console.log(item.fields.budget === xpoType || item.fields.budget === xpoType)
+            console.log("this is the budgets")
         }
-            return item.fields.experience.toLowerCase() === xpoType || item.fields.experience.toLowerCase() === `${xpoType}\n`
+            return item.fields.budget.toLowerCase() === xpoType || item.fields.budget.toLowerCase() === `${xpoType}\n`
         })
-        console.log("line 11 in Final List", experienceList[0]?.fields["review (from Reviews)"])
-        setFinalFilter(experienceList)
+        // console.log("line 11 in Final List", experienceList[0]?.fields["review (from Reviews)"])
+        setFinalFilter(budgetList)
     }, []);
     // console.log(finalFilter)
 
@@ -29,6 +28,7 @@ export default function FinalList(props) {
     
     // if (finalFilter.ID === null)
     
+    console.log("this is the final filter", finalFilter)
 
     return (
         finalFilter.map((filter) => (
