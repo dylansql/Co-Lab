@@ -77,7 +77,6 @@ function App() {
                         <FinalList filteredList={filteredList} />
                       </Route>
 
-
                       <Route exact path="/category/PhoVideography/">
                         <PhoVideography setToggle={setToggle} />
                       </Route>
