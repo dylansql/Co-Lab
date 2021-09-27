@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { useEffect } from 'react';
 
 export default function StudioFinalList(props) {
@@ -33,7 +33,8 @@ export default function StudioFinalList(props) {
     return (
         finalFilter.map((filter) => (
             <div className="text-left">
-            <div className="block" key={filter.id}>   
+            <div className="space-y-10" key={filter.id}> 
+            <Link to={`/Profile/${filter.fields.name}`}><img src={filter.fields.images} height="200" width="200" className="" /></Link> 
             <p>Name: {filter.fields.name} </p>
             <p>Categorey: {filter.fields.category}</p>
             <p>{filter.fields["review (from Reviews)"][0]}</p>

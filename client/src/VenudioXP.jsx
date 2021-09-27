@@ -23,20 +23,24 @@ const VenudioXP = (props) => {
 
 
     return (
-        <div className="Experience">
-            <h1>{type}</h1>
-            <h3>What's your budget?</h3>
-                <div className="size-low">
-                    <Link to={`/category/Venudio/${type}/xpo/low-range/results`}><button>Low Budget</button></Link>
-                            <h5>Logo should be Above</h5>
+        <div className="justify-self-centertext-center space-y-4">
+            <h1 className="uppercase font-bold">{type}</h1>
+            <h3 className="uppercase font-bold">What's your budget?</h3>
+                <div className="justify-self-center">
+                    <Link to={`/category/Venudio/${type}/xpo/low-range/results`}><img src="https://res.cloudinary.com/ddid7dngp/image/upload/v1632590204/Single_Sign_p5bhyc.png" height="100" width="100" className="object-center" /> </Link>
+                            <h5 className="uppercase font-bold">0-300</h5>
                     </div>
-                <div className="size-mid">
-                    <Link to={`/category/Venudio/${type}/xpo/mid-range/results`}><button>Mid Budget</button></Link>
-                            <h5>Logo should be Above</h5>
+                <div className="justify-self-center">
+                    <Link to={`/category/Venudio/${type}/xpo/mid-range/results`}><img src="https://res.cloudinary.com/ddid7dngp/image/upload/v1632590197/Double_Sign_msrdmp.png" height="100" width="100" /> </Link>
                     </div>
-                <div className="size-low">
-                <Link to={`/category/Venudio/${type}/xpo/high-range/results`}><button>High Budget</button></Link>
-                            <h5>Logo should be Above</h5>
+                    <div>
+                            <h5 className="uppercase font-bold">300-500</h5>
+                    </div>
+                <div className="justify-self-center">
+                <Link to={`/category/Venudio/${type}/xpo/high-range/results`}><img src="https://res.cloudinary.com/ddid7dngp/image/upload/v1632590212/Triple_Sign_zyekeh.png" height="100" width="100" /> </Link>
+                    </div>
+                    <div>
+                            <h5 className="uppercase font-bold">500+</h5>
                     </div>
         </div>
     );

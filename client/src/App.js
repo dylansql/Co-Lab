@@ -13,6 +13,7 @@ import VenudioXP from './VenudioXP'
 import StudioFinalList from './StudioFinalList'
 import Create from './Create'
 import './index.css'
+import Profile from './Profile.jsx'
 
 const BASE = process.env.REACT_APP_AIRTABLE_BASE
 const KEY = process.env.REACT_APP_AIRTABLE_KEY
@@ -58,10 +59,10 @@ function App() {
   return (
     <Router>
       <div className="div">
-        <header className="bg-black">
+        <header className="bg-black position-absolute">
           <Navbar />
             </header>
-                  <body className="bg-gray-300  justify-center text-center py-44">
+                  <body className="flow root bg-gray-300  w-screen h-screen justify-center items-center text-center py-44 pt-10 pb-30 overflow-hidden">
                   <Switch>
                       <Route exact path="/">
                         <Home />
@@ -98,6 +99,9 @@ function App() {
                       </Route>
                       <Route exact path="/Create/Post">
                         <Create list={list} />
+                      </Route>
+                      <Route exact path="/Profile/:name">
+                        <Profile filteredList={filteredList} />
                       </Route>
                   </Switch>
                   </body>

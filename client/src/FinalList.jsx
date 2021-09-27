@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { useEffect } from 'react';
 
 export default function FinalList(props) {
     const [ finalFilter, setFinalFilter ] = useState([]);
     const { xpoType } = useParams()
     const { filteredList } = props
+    
     
 
     
@@ -32,7 +33,8 @@ export default function FinalList(props) {
 
     return (
         finalFilter.map((filter) => (
-        <div className="Artist-Review" key={filter.id}>   
+        <div className="" key={filter.id}> 
+            <Link to={`/Profile/${filter.fields.name}`}><img src={filter.fields.images} height="80" width="80" className="" /></Link>
             <p>Name: {filter.fields.name} </p>
             <p>Categorey: {filter.fields.category}</p>
             <p>{filter.fields["review (from Reviews)"][0]}</p>
