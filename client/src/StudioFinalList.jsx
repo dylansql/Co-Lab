@@ -32,13 +32,15 @@ export default function StudioFinalList(props) {
 
     return (
         finalFilter.map((filter) => (
-        <div className="Artist-Review" key={filter.id}>   
+            <div className="text-left">
+            <div className="block" key={filter.id}>   
             <p>Name: {filter.fields.name} </p>
             <p>Categorey: {filter.fields.category}</p>
             <p>{filter.fields["review (from Reviews)"][0]}</p>
             {/* {filter.fields["review (from Reviews)"].map((review, index) => (
                 <p key={index}>{review}</p>
             ))} */}
+            </div>
         </div>
     ))
     );

@@ -23,20 +23,21 @@ const Experience = (props) => {
 
 
     return (
-        <div className="Experience">
-            <h1>{type}</h1>
-            <h3>What level of experience do you need?</h3>
-                <div className="size-low">
-                    <Link to={`/category/music/${type}/xpo/size-low`}><button>I can work with little experience</button></Link>
-                            <h5>Logo should be Above</h5>
+        <div className="space-y-6">
+            <h1 className="uppercase font-bold">{type}</h1>
+            <h3 className="font-bold uppercase">What level of experience do you need?</h3>
+                <div className="pl-32">
+                    <Link to={`/category/music/${type}/xpo/size-low`}><img src="https://res.cloudinary.com/ddid7dngp/image/upload/v1632590174/Low_XP_k3dk4p.png" height="100" width="100" /></Link>
                     </div>
-                <div className="size-mid">
-                    <Link to={`/category/music/${type}/xpo/size-mid`}><button>I can work with medium experience</button></Link>
-                            <h5>Logo should be Above</h5>
+                    <div>
                     </div>
-                <div className="size-low">
-                <Link to={`/category/music/${type}/xpo/size-high`}><button>I need high experience</button></Link>
-                            <h5>Logo should be Above</h5>
+                <div className="pl-32">
+                    <Link to={`/category/music/${type}/xpo/size-mid`}><img src="https://res.cloudinary.com/ddid7dngp/image/upload/v1632590183/mid_XP_b1vtur.png" height="100" width="100" /></Link>
+                    </div>
+                    <div>
+                    </div>
+                <div className="pl-32">
+                <Link to={`/category/music/${type}/xpo/size-high`}><img src="https://res.cloudinary.com/ddid7dngp/image/upload/v1632590165/high_XP_lgwwfg.png" height="100" width="100" /></Link>
                     </div>
         </div>
     );

@@ -4,7 +4,6 @@ import PhoVideography from './PhoVideography'
 import Venudio from './Venudio'
 import Home from './Home'
 import Navbar from './Navbar'
-import './App.css'
 
 import { useEffect, useState } from 'react'
 import axios from 'axios'
@@ -58,11 +57,11 @@ function App() {
 
   return (
     <Router>
-      <div  className="App">
-        <header>
+      <div className="div">
+        <header className="bg-black">
           <Navbar />
             </header>
-                <div>
+                  <body className="bg-gray-300  justify-center text-center py-44">
                   <Switch>
                       <Route exact path="/">
                         <Home />
@@ -101,7 +100,10 @@ function App() {
                         <Create list={list} />
                       </Route>
                   </Switch>
-              </div>
+                  </body>
+              <footer className="flex bg-black justify-center">
+                <div className="justify-center"><img src="https://res.cloudinary.com/ddid7dngp/image/upload/v1632588474/Colab_Words_whitepng_i17ozu.png" height="50px" width="80" /></div>
+              </footer>
       </div>
     </Router>
     );

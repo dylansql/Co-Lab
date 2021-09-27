@@ -60,7 +60,7 @@ export default function Create(props) {
 
 
     return (
-        <div className="Form">
+        <div className="create">
         <form onSubmit={handleSubmit}>
             <h4>Write a Review!</h4>
             <label>Category</label> 
