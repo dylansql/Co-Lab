@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Music = () => {
 
     return (
-        <div className="space-y-8">
+        <div className="space-y-10 sm:pl-10">
             <h1 className="uppercase font-bold">Music</h1>
             <h3 className="uppercase font-bold">What's your missing Piece?</h3>
                 <div className="Musician">

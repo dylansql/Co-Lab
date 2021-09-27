@@ -62,7 +62,7 @@ function App() {
         <header className="bg-black position-absolute">
           <Navbar />
             </header>
-                  <body className="flow root bg-gray-300  w-screen h-screen justify-center items-center text-center py-44 pt-10 pb-30 overflow-hidden">
+                  <body className="flow-root bg-gray-300  w-screen h-screen place-self-center  items-center text-center py-44 pt-10 pb-30 overflow-hidden">
                   <Switch>
                       <Route exact path="/">
                         <Home />
