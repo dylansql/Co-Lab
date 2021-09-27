@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Name
 
-## Available Scripts
+CO-Lab
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+Co-Lab/ATL - is a forum/search site for people who are well versed in a specific musical field find someone who can help them piece together their dreams and ideas. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Mobile first application where the user can search for people that they have the talent that they need to collaborate with and find their contact information. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Other users will be able to write a review for the artist/musician that they worked with and can recommend that person to others.
 
-### `npm test`
+## Wireframes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+https://whimsical.com/wireframe-KNSz9tzJ1j5N4TWnmS72CY
 
-### `npm run build`
+### Hierarchy Component
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://whimsical.com/component-hierarchy-UAgsQR7jxzi75mJuPG9ooA
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### MVP/PostMVP
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### API 
 
-### `npm run eject`
+The Api I will be using was created on airtable. I will be extracting data to filter the needs of the user. After the results have been extracted. I will create a profile page with additional information of the result. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### MVP 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Use Api to render recommendations dependent on the parameters of the use
+- Include 6 rendering components
+- Use only react to manipulate DOM
+- Use Axios to POST/create new data on the AirTable.
+- Develop Interactive React App
+- USe CSS to create a dynamic and responsice site
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### PostMVP  
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Implement a css Library
+- Use authentification for users to create their own profile
+- Create an organized React file Structure
+- render Loading in a css animation
+- add remove buttons for additional reviews
+- create a search bar so that first time users can find an artist by name 
+- Create a side bar that goes straight to reviews and other components
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Schedule
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+|  Day | Deliverable | Status
+|---|---| ---|
+|September 20| Access API and render results with various props | Incomplete
+|September 21| Core Application Structure (HTML, CSS, etc.)/ Pseudocode | Incomplete
+|September 22| Actual Code/Clickable Code| Incomplete
+|September 23| MVP | Incomplete
+|September 24| Presentations | Incomplete
 
-### Code Splitting
+## Priority Matrix
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![prioritymatrix](./Assets/pm.png)
 
-### Analyzing the Bundle Size
+## Timeframes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+| Component | Priority | Estimated Time | Time Invested | ActualTime |
+| :---: | :---: | :---: | :---: | :---: |
+| Pseudocode | 3H | 3 hrs| 2.5hrs | 3hrs |
+| Building Airtable | 2H | 2hrs| 2.5hrs | 3 hrs |
+| Build Route paths and components | 5H | 5hrs | 5.5Hrs | 5hrs |
+| useEffect Api and create first filter  | 4Hrs | 4Hrs  | 6Hrs | 5Hrs |
+| Prop first filter to create second filter | 2Hrs | 2Hrs | 2Hrs | 2Hrs |
+| Create review component with dynamic search for names | 6Hrs | 6Hrs  | 6Hrs | 6Hrs |
+| Styling with css library | 5Hrs | 5Hrs | 3Hrs | 3Hrs |
+| Clean up code | 3H | 3Hrs | 3Hrs | 3Hrs |
+| Total | 40hrs | 29Hrs| 32hrs | ~44Hrs |
 
-### Making a Progressive Web App
+## Code Snippet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
 
-### Advanced Configuration
+![faveCodeSnip](./Assets/favCodeSnip.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## Change Log
+ Use this section to document what changes were made and the reasoning behind those changes.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The original idea was to create a album/artist generater with given parameters of year, genre, and mood. I thought I had the right api but unfortunately I was not able to access it. Although I wasn't able to create the original idea. I thought soon after that starting my journey in SE on a smaller scale would be more beneficial. With this pivot in goals I was able to access two Api's while using the result of one to satify the arugment of another. 
