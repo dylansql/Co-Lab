@@ -34,7 +34,7 @@ export default function FinalList(props) {
     return (
         finalFilter.map((filter) => (
         <div className="" key={filter.id}> 
-            <Link to={`/Profile/${filter.fields.name}`}><img src={filter.fields.images} height="80" width="80" className="" /></Link>
+            <Link to={`/Profile/${filter.fields.name}`}><img src={filter.fields.images} height="80" width="80" className="lg:pl-22" /></Link>
             <p>Name: {filter.fields.name} </p>
             <p>Categorey: {filter.fields.category}</p>
             <p>{filter.fields["review (from Reviews)"][0]}</p>

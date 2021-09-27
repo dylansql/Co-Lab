@@ -64,6 +64,7 @@ The Api I will be using was created on airtable. I will be extracting data to fi
 
 | Component | Priority | Estimated Time | Time Invested | ActualTime |
 | :---: | :---: | :---: | :---: | :---: |
+| Creating concept, wireframe, and component heirarchy | 5H | 5 hrs| 5hrs | 8hrs |
 | Pseudocode | 3H | 3 hrs| 2.5hrs | 3hrs |
 | Building Airtable | 2H | 2hrs| 2.5hrs | 3 hrs |
 | Build Route paths and components | 5H | 5hrs | 5.5Hrs | 5hrs |
@@ -72,7 +73,7 @@ The Api I will be using was created on airtable. I will be extracting data to fi
 | Create review component with dynamic search for names | 6Hrs | 6Hrs  | 6Hrs | 6Hrs |
 | Styling with css library | 5Hrs | 5Hrs | 3Hrs | 3Hrs |
 | Clean up code | 3H | 3Hrs | 3Hrs | 3Hrs |
-| Total | 40hrs | 29Hrs| 32hrs | ~44Hrs |
+| Total | 30hrs | 30Hrs| 32hrs | ~44Hrs |
 
 ## Code Snippet
 
@@ -84,4 +85,4 @@ Use this section to include a brief code snippet of functionality that you are p
 ## Change Log
  Use this section to document what changes were made and the reasoning behind those changes.  
 
-The original idea was to create a album/artist generater with given parameters of year, genre, and mood. I thought I had the right api but unfortunately I was not able to access it. Although I wasn't able to create the original idea. I thought soon after that starting my journey in SE on a smaller scale would be more beneficial. With this pivot in goals I was able to access two Api's while using the result of one to satify the arugment of another. 
+In many ways I wanted to create way more functionality. i.e. user authentication with password. Local history to add and remove favorite profiles. Creating internal dialog between accounts where everything is in app. However, I decided due to time constraints I will do something a bit less ambitious. 

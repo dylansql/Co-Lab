@@ -23,20 +23,20 @@ const VenudioXP = (props) => {
 
 
     return (
-        <div className="space-y-6">
+        <div className="space-y-8">
             <h1 className="uppercase font-bold">{type}</h1>
             <h3 className="uppercase font-bold">What's your budget?</h3>
-                <div className="pl-40">
+                <div className="pl-40 lg:pl-96">
                     <Link to={`/category/Venudio/${type}/xpo/low-range/results`}><img src="https://res.cloudinary.com/ddid7dngp/image/upload/v1632590204/Single_Sign_p5bhyc.png" height="100" width="100" className="object-center" /> </Link>
                     </div>
                                 <div><h5 className="uppercase font-bold">0-300</h5></div>
-                <div className="pl-40">
+                <div className="pl-40 lg:pl-96">
                     <Link to={`/category/Venudio/${type}/xpo/mid-range/results`}><img src="https://res.cloudinary.com/ddid7dngp/image/upload/v1632590197/Double_Sign_msrdmp.png" height="100" width="100" /> </Link>
                     </div>
                     <div>
                             <h5 className="uppercase font-bold">300-500</h5>
                     </div>
-                <div className="pl-40">
+                <div className="pl-40 lg:pl-96">
                 <Link to={`/category/Venudio/${type}/xpo/high-range/results`}><img src="https://res.cloudinary.com/ddid7dngp/image/upload/v1632590212/Triple_Sign_zyekeh.png" height="100" width="100" /> </Link>
                     </div>
                     <div>
