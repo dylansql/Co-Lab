@@ -50,11 +50,11 @@ The Api I will be using was created on airtable. I will be extracting data to fi
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|September 20| Access API and render results with various props | Incomplete
-|September 21| Core Application Structure (HTML, CSS, etc.)/ Pseudocode | Incomplete
-|September 22| Actual Code/Clickable Code| Incomplete
-|September 23| MVP | Incomplete
-|September 24| Presentations | Incomplete
+|September 20| Create concept, logic, and wireframe | Complete
+|September 21| Build Airtable/ access api/ work on code | Complete
+|September 22| Actual Code/Clickable Code| Complete
+|September 23| MVP | Complete
+|September 24| Styling with new Library | Complete
 
 ## Priority Matrix
 
